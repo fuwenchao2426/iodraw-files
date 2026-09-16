@@ -6,7 +6,7 @@
         <mxCell id="1" parent="0" />
         <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;flowchart TD\n    subgraph 上位机（ROS）\n        A1[雷达驱动] --点云--&gt; A2[SLAM]\n        A2 --位姿--&gt; A3[导航]\n        A4[底盘驱动] --里程计--&gt; A2\n        A5[人机交互] --目标点/手动指令--&gt; A3\n        A3 --速度指令--&gt; A4\n    end\n\n    A4 -.串口.-&gt; B1[串口通信]\n\n    subgraph 下位机（MCU）\n        B1 --&gt; B2[电机控制]\n        B2 --&gt; B3[电机驱动]\n        B4[编码器采集] --&gt; B5[里程计计算]\n        B5 --&gt; B1\n    end&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="neb4ZYbmU0zpXGaA1deD-1">
           <mxCell style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;rounded=1;" parent="1" connectable="0" vertex="1">
-            <mxGeometry x="481" as="geometry" />
+            <mxGeometry x="540" y="30" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="上位机（ROS）" mermaidId="n:上位机（ROS）" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="上位机（ROS）" id="neb4ZYbmU0zpXGaA1deD-2">
