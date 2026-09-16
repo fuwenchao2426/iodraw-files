@@ -1,171 +1,182 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="tNjJ8Tw9NUjsHGGNJt61">
-    <mxGraphModel dx="3962" dy="1838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1254" dy="735" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;flowchart TD\n    subgraph 上位机（ROS）\n        A1[雷达驱动] --点云--&gt; A2[SLAM]\n        A2 --位姿--&gt; A3[导航]\n        A4[底盘驱动] --里程计--&gt; A2\n        A5[人机交互] --目标点/手动指令--&gt; A3\n        A3 --速度指令--&gt; A4\n    end\n\n    A4 -.串口.-&gt; B1[串口通信]\n\n    subgraph 下位机（MCU）\n        B1 --&gt; B2[电机控制]\n        B2 --&gt; B3[电机驱动]\n        B4[编码器采集] --&gt; B5[里程计计算]\n        B5 --&gt; B1\n    end&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="neb4ZYbmU0zpXGaA1deD-1">
           <mxCell style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;rounded=1;" parent="1" connectable="0" vertex="1">
-            <mxGeometry as="geometry" />
+            <mxGeometry x="481" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="上位机（ROS）" mermaidId="n:上位机（ROS）" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="上位机（ROS）" id="neb4ZYbmU0zpXGaA1deD-2">
           <mxCell style="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;aspect=fixed;transparentBounds=1;groupPadding=40;rounded=1;" parent="neb4ZYbmU0zpXGaA1deD-1" vertex="1">
-            <mxGeometry as="geometry" />
+            <mxGeometry x="89.5" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="雷达驱动" mermaidId="n:A1" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="雷达驱动" id="neb4ZYbmU0zpXGaA1deD-3">
           <mxCell style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;" parent="neb4ZYbmU0zpXGaA1deD-2" vertex="1">
-            <mxGeometry x="92" y="160" width="124" height="54" as="geometry" />
+            <mxGeometry x="-13.5" width="124" height="54" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="SLAM" mermaidId="n:A2" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="SLAM" id="neb4ZYbmU0zpXGaA1deD-4">
           <mxCell style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;" parent="neb4ZYbmU0zpXGaA1deD-2" vertex="1">
-            <mxGeometry x="332" y="160" width="97" height="54" as="geometry" />
+            <mxGeometry y="154" width="97" height="54" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="导航" mermaidId="n:A3" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="导航" id="neb4ZYbmU0zpXGaA1deD-5">
           <mxCell style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;" parent="neb4ZYbmU0zpXGaA1deD-2" vertex="1">
-            <mxGeometry x="628" y="85" width="92" height="54" as="geometry" />
+            <mxGeometry x="145.7283950617284" y="308" width="92" height="54" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="底盘驱动" mermaidId="n:A4" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="底盘驱动" id="neb4ZYbmU0zpXGaA1deD-6">
           <mxCell style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;" parent="neb4ZYbmU0zpXGaA1deD-2" vertex="1">
-            <mxGeometry x="852" y="94" width="124" height="54" as="geometry" />
+            <mxGeometry x="117.55075445816189" y="462" width="124" height="54" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="人机交互" mermaidId="n:A5" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="人机交互" id="neb4ZYbmU0zpXGaA1deD-7">
           <mxCell style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;" parent="neb4ZYbmU0zpXGaA1deD-2" vertex="1">
-            <mxGeometry x="314" y="76" width="124" height="54" as="geometry" />
+            <mxGeometry x="127" y="154" width="124" height="54" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="点云" mermaidId="e:A1-&gt;A2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.51;entryY=0;" mermaidBaseValue="点云" id="neb4ZYbmU0zpXGaA1deD-8">
-          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="neb4ZYbmU0zpXGaA1deD-2" source="neb4ZYbmU0zpXGaA1deD-3" target="neb4ZYbmU0zpXGaA1deD-4" edge="1">
+          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;noEdgeStyle=1;orthogonal=1;" parent="neb4ZYbmU0zpXGaA1deD-2" source="neb4ZYbmU0zpXGaA1deD-3" target="neb4ZYbmU0zpXGaA1deD-4" edge="1">
             <mxGeometry relative="1" as="geometry">
               <mxPoint x="-9" as="offset" />
               <Array as="points">
-                <mxPoint x="274" y="187" />
+                <mxPoint x="48.5" y="66" />
+                <mxPoint x="48.5" y="142" />
               </Array>
             </mxGeometry>
           </mxCell>
         </UserObject>
         <UserObject label="位姿" mermaidId="e:A2-&gt;A3#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.27;exitY=1;entryX=0.96;entryY=0;" mermaidBaseValue="位姿" id="neb4ZYbmU0zpXGaA1deD-9">
-          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.3333;entryX=0;entryY=0.6667;" parent="neb4ZYbmU0zpXGaA1deD-2" source="neb4ZYbmU0zpXGaA1deD-4" target="neb4ZYbmU0zpXGaA1deD-5" edge="1">
+          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.3333;entryX=0;entryY=0.6667;noEdgeStyle=1;orthogonal=1;" parent="neb4ZYbmU0zpXGaA1deD-2" source="neb4ZYbmU0zpXGaA1deD-4" target="neb4ZYbmU0zpXGaA1deD-5" edge="1">
             <mxGeometry relative="1" as="geometry">
               <mxPoint x="-24" as="offset" />
               <Array as="points">
-                <mxPoint x="612" y="178" />
-                <mxPoint x="612" y="121" />
+                <mxPoint x="70.25" y="220" />
+                <mxPoint x="171.2283950617284" y="296" />
               </Array>
             </mxGeometry>
           </mxCell>
         </UserObject>
         <UserObject label="里程计" mermaidId="e:A4-&gt;A2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.87;exitY=0;entryX=0.62;entryY=1;" mermaidBaseValue="里程计" id="neb4ZYbmU0zpXGaA1deD-10">
-          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.6667;entryX=1;entryY=0.6667;" parent="neb4ZYbmU0zpXGaA1deD-2" source="neb4ZYbmU0zpXGaA1deD-6" target="neb4ZYbmU0zpXGaA1deD-4" edge="1">
+          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.6667;entryX=1;entryY=0.6667;noEdgeStyle=1;orthogonal=1;" parent="neb4ZYbmU0zpXGaA1deD-2" source="neb4ZYbmU0zpXGaA1deD-6" target="neb4ZYbmU0zpXGaA1deD-4" edge="1">
             <mxGeometry relative="1" as="geometry">
               <mxPoint x="0.5" as="offset" />
               <Array as="points">
-                <mxPoint x="836" y="130" />
-                <mxPoint x="836" y="206" />
-                <mxPoint x="454" y="206" />
-                <mxPoint x="454" y="196" />
+                <mxPoint x="151.0507544581619" y="450" />
+                <mxPoint x="114.02537722908095" y="412" />
+                <mxPoint x="114.02537722908095" y="258" />
+                <mxPoint x="26.75" y="220" />
               </Array>
             </mxGeometry>
           </mxCell>
         </UserObject>
         <UserObject label="目标点/手动指令" mermaidId="e:A5-&gt;A3#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.23;entryY=0;" mermaidBaseValue="目标点/手动指令" id="neb4ZYbmU0zpXGaA1deD-11">
-          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.3333;" parent="neb4ZYbmU0zpXGaA1deD-2" source="neb4ZYbmU0zpXGaA1deD-7" target="neb4ZYbmU0zpXGaA1deD-5" edge="1">
+          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.3333;noEdgeStyle=1;orthogonal=1;" parent="neb4ZYbmU0zpXGaA1deD-2" source="neb4ZYbmU0zpXGaA1deD-7" target="neb4ZYbmU0zpXGaA1deD-5" edge="1">
             <mxGeometry relative="1" as="geometry">
               <mxPoint as="offset" />
               <Array as="points">
-                <mxPoint x="533" y="103" />
+                <mxPoint x="189" y="220" />
+                <mxPoint x="212.2283950617284" y="296" />
               </Array>
             </mxGeometry>
           </mxCell>
         </UserObject>
         <UserObject label="速度指令" mermaidId="e:A3-&gt;A4#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.31;entryY=0;" mermaidBaseValue="速度指令" id="neb4ZYbmU0zpXGaA1deD-12">
-          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.3333;" parent="neb4ZYbmU0zpXGaA1deD-2" source="neb4ZYbmU0zpXGaA1deD-5" target="neb4ZYbmU0zpXGaA1deD-6" edge="1">
+          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.3333;noEdgeStyle=1;orthogonal=1;" parent="neb4ZYbmU0zpXGaA1deD-2" source="neb4ZYbmU0zpXGaA1deD-5" target="neb4ZYbmU0zpXGaA1deD-6" edge="1">
             <mxGeometry relative="1" as="geometry">
               <mxPoint x="-1" as="offset" />
               <Array as="points">
-                <mxPoint x="786" y="112" />
+                <mxPoint x="191.7283950617284" y="374" />
+                <mxPoint x="208.0507544581619" y="450" />
               </Array>
             </mxGeometry>
           </mxCell>
         </UserObject>
         <UserObject label="下位机（MCU）" mermaidId="n:下位机（MCU）" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="下位机（MCU）" id="neb4ZYbmU0zpXGaA1deD-13">
           <mxCell style="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;transparentBounds=1;groupPadding=40;rounded=1;" parent="neb4ZYbmU0zpXGaA1deD-1" vertex="1">
-            <mxGeometry as="geometry" />
+            <mxGeometry x="211" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="串口通信" mermaidId="n:B1" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="串口通信" id="neb4ZYbmU0zpXGaA1deD-14">
           <mxCell style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;" parent="neb4ZYbmU0zpXGaA1deD-13" vertex="1">
-            <mxGeometry x="510" y="370" width="124" height="54" as="geometry" />
+            <mxGeometry x="169.1954732510288" y="616" width="124" height="54" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="电机控制" mermaidId="n:B2" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="电机控制" id="neb4ZYbmU0zpXGaA1deD-15">
           <mxCell style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;" parent="neb4ZYbmU0zpXGaA1deD-13" vertex="1">
-            <mxGeometry x="664" y="370" width="124" height="54" as="geometry" />
+            <mxGeometry x="168.04012345679013" y="770" width="124" height="54" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="电机驱动" mermaidId="n:B3" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="电机驱动" id="neb4ZYbmU0zpXGaA1deD-16">
           <mxCell style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;" parent="neb4ZYbmU0zpXGaA1deD-13" vertex="1">
-            <mxGeometry x="818" y="370" width="124" height="54" as="geometry" />
+            <mxGeometry x="168.04012345679013" y="924" width="124" height="54" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="编码器采集" mermaidId="n:B4" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="编码器采集" id="neb4ZYbmU0zpXGaA1deD-17">
           <mxCell style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;" parent="neb4ZYbmU0zpXGaA1deD-13" vertex="1">
-            <mxGeometry x="170" y="370" width="140" height="54" as="geometry" />
+            <mxGeometry x="281" width="140" height="54" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="里程计计算" mermaidId="n:B5" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="里程计计算" id="neb4ZYbmU0zpXGaA1deD-18">
           <mxCell style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;" parent="neb4ZYbmU0zpXGaA1deD-13" vertex="1">
-            <mxGeometry x="340" y="370" width="140" height="54" as="geometry" />
+            <mxGeometry x="281" y="154" width="140" height="54" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="" mermaidId="e:B1-&gt;B2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="neb4ZYbmU0zpXGaA1deD-19">
-          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="neb4ZYbmU0zpXGaA1deD-13" source="neb4ZYbmU0zpXGaA1deD-14" target="neb4ZYbmU0zpXGaA1deD-15" edge="1">
+          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;noEdgeStyle=1;orthogonal=1;" parent="neb4ZYbmU0zpXGaA1deD-13" source="neb4ZYbmU0zpXGaA1deD-14" target="neb4ZYbmU0zpXGaA1deD-15" edge="1">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
-                <mxPoint x="649" y="397" />
+                <mxPoint x="231.19547325102883" y="682" />
+                <mxPoint x="230.04012345679013" y="758" />
               </Array>
             </mxGeometry>
           </mxCell>
         </UserObject>
         <UserObject label="" mermaidId="e:B2-&gt;B3#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="neb4ZYbmU0zpXGaA1deD-20">
-          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="neb4ZYbmU0zpXGaA1deD-13" source="neb4ZYbmU0zpXGaA1deD-15" target="neb4ZYbmU0zpXGaA1deD-16" edge="1">
+          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;noEdgeStyle=1;orthogonal=1;" parent="neb4ZYbmU0zpXGaA1deD-13" source="neb4ZYbmU0zpXGaA1deD-15" target="neb4ZYbmU0zpXGaA1deD-16" edge="1">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
-                <mxPoint x="803" y="397" />
+                <mxPoint x="230.04012345679013" y="836" />
+                <mxPoint x="230.04012345679013" y="912" />
               </Array>
             </mxGeometry>
           </mxCell>
         </UserObject>
         <UserObject label="" mermaidId="e:B4-&gt;B5#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="neb4ZYbmU0zpXGaA1deD-21">
-          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="neb4ZYbmU0zpXGaA1deD-13" source="neb4ZYbmU0zpXGaA1deD-17" target="neb4ZYbmU0zpXGaA1deD-18" edge="1">
+          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;noEdgeStyle=1;orthogonal=1;" parent="neb4ZYbmU0zpXGaA1deD-13" source="neb4ZYbmU0zpXGaA1deD-17" target="neb4ZYbmU0zpXGaA1deD-18" edge="1">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
-                <mxPoint x="325" y="397" />
+                <mxPoint x="351" y="66" />
+                <mxPoint x="351" y="142" />
               </Array>
             </mxGeometry>
           </mxCell>
         </UserObject>
         <UserObject label="" mermaidId="e:B5-&gt;B1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.44;entryY=0;" mermaidBaseValue="" id="neb4ZYbmU0zpXGaA1deD-22">
-          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="neb4ZYbmU0zpXGaA1deD-13" source="neb4ZYbmU0zpXGaA1deD-18" target="neb4ZYbmU0zpXGaA1deD-14" edge="1">
+          <mxCell style="curved=0;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;noEdgeStyle=1;orthogonal=1;" parent="neb4ZYbmU0zpXGaA1deD-13" source="neb4ZYbmU0zpXGaA1deD-18" target="neb4ZYbmU0zpXGaA1deD-14" edge="1">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
-                <mxPoint x="495" y="397" />
+                <mxPoint x="351" y="220" />
+                <mxPoint x="317.52777777777777" y="258" />
+                <mxPoint x="317.52777777777777" y="412" />
+                <mxPoint x="317.52777777777777" y="412" />
+                <mxPoint x="317.52777777777777" y="566" />
+                <mxPoint x="259.69547325102883" y="604" />
               </Array>
             </mxGeometry>
           </mxCell>
         </UserObject>
         <UserObject label="串口" mermaidId="e:A4-&gt;B1#0" mermaidBaseStyle="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.62;entryY=0;" mermaidBaseValue="串口" id="neb4ZYbmU0zpXGaA1deD-23">
-          <mxCell style="curved=0;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.6666;entryY=0;" parent="neb4ZYbmU0zpXGaA1deD-1" source="neb4ZYbmU0zpXGaA1deD-6" target="neb4ZYbmU0zpXGaA1deD-14" edge="1">
+          <mxCell style="curved=0;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.6666;entryY=0;noEdgeStyle=1;orthogonal=1;" parent="neb4ZYbmU0zpXGaA1deD-1" source="neb4ZYbmU0zpXGaA1deD-6" target="neb4ZYbmU0zpXGaA1deD-14" edge="1">
             <mxGeometry relative="1" as="geometry">
               <mxPoint y="-122.34" as="offset" />
               <Array as="points">
-                <mxPoint x="914" y="259" />
-                <mxPoint x="593" y="259" />
+                <mxPoint x="179.5507544581619" y="528" />
+                <mxPoint x="202.6954732510288" y="604" />
               </Array>
             </mxGeometry>
           </mxCell>
