@@ -170,6 +170,42 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
+        <mxCell id="-iVnlAEFekHolqDh2lnD-1" value="Start" style="ellipse" vertex="1" parent="1">
+          <mxGeometry x="290" y="260" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-iVnlAEFekHolqDh2lnD-2" value="Entry" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="260" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-iVnlAEFekHolqDh2lnD-3" value="" style="curved=1;noEdgeStyle=1;orthogonal=1;" edge="1" source="-iVnlAEFekHolqDh2lnD-1" target="-iVnlAEFekHolqDh2lnD-2" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="382" y="275" />
+              <mxPoint x="458" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-iVnlAEFekHolqDh2lnD-4" value="Entry" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="260" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-iVnlAEFekHolqDh2lnD-5" value="" style="curved=1;noEdgeStyle=1;orthogonal=1;" edge="1" source="-iVnlAEFekHolqDh2lnD-2" target="-iVnlAEFekHolqDh2lnD-4" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="562" y="275" />
+              <mxPoint x="638" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-iVnlAEFekHolqDh2lnD-6" value="Entry" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="260" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-iVnlAEFekHolqDh2lnD-7" value="" style="curved=1;noEdgeStyle=1;orthogonal=1;" edge="1" source="-iVnlAEFekHolqDh2lnD-4" target="-iVnlAEFekHolqDh2lnD-6" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="742" y="275" />
+              <mxPoint x="818" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
